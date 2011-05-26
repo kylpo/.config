@@ -48,7 +48,7 @@
       S: shade (roll up/down)
       D: omnipresent (on all desktops).
   -->
-    <keepBorder>yes</keepBorder>
+    <keepBorder>no</keepBorder>
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>sans</name>
@@ -155,146 +155,633 @@
     <moveButton>Middle</moveButton>
     <!-- 'Left', 'Middle', 'Right' -->
   </dock>
-  <keyboard><chainQuitKey>C-g</chainQuitKey><!-- Keybindings for desktop switching --><keybind key="C-A-Left"><action name="DesktopLeft"><dialog>no</dialog><wrap>no</wrap></action></keybind><keybind key="C-A-Right"><action name="DesktopRight"><dialog>no</dialog><wrap>no</wrap></action></keybind><keybind key="C-A-Up"><action name="DesktopUp"><dialog>no</dialog><wrap>no</wrap></action></keybind><keybind key="C-A-Down"><action name="DesktopDown"><dialog>no</dialog><wrap>no</wrap></action></keybind><keybind key="S-A-Left"><action name="SendToDesktopLeft"><dialog>no</dialog><wrap>no</wrap></action></keybind><keybind key="S-A-Right"><action name="SendToDesktopRight"><dialog>no</dialog><wrap>no</wrap></action></keybind><keybind key="S-A-Up"><action name="SendToDesktopUp"><dialog>no</dialog><wrap>no</wrap></action></keybind><keybind key="S-A-Down"><action name="SendToDesktopDown"><dialog>no</dialog><wrap>no</wrap></action></keybind><!-- Desktops Movements --><keybind key="W-1"><action name="Desktop"><desktop>1</desktop></action></keybind><keybind key="W-A-1"><action name="SendToDesktop"><desktop>1</desktop><follow>yes</follow></action></keybind><keybind key="W-2"><action name="Desktop"><desktop>2</desktop></action></keybind><keybind key="W-A-2"><action name="SendToDesktop"><desktop>2</desktop><follow>yes</follow></action></keybind><keybind key="W-3"><action name="Desktop"><desktop>3</desktop></action></keybind><keybind key="W-A-3"><action name="SendToDesktop"><desktop>3</desktop><follow>yes</follow></action></keybind><keybind key="W-4"><action name="Desktop"><desktop>4</desktop></action></keybind><keybind key="W-A-4"><action name="SendToDesktop"><desktop>4</desktop><follow>yes</follow></action></keybind><keybind key="W-5"><action name="Desktop"><desktop>5</desktop></action></keybind><keybind key="W-A-5"><action name="SendToDesktop"><desktop>5</desktop><follow>yes</follow></action></keybind><keybind key="W-6"><action name="Desktop"><desktop>6</desktop></action></keybind><keybind key="W-A-6"><action name="SendToDesktop"><desktop>6</desktop><follow>yes</follow></action></keybind><keybind key="W-d"><action name="ToggleShowDesktop"/></keybind><!-- Windows Actions --><keybind key="W-c"><action name="Close">
-        </action></keybind><keybind key="W-A-space"><action name="ToggleAlwaysOnTop">
-        </action></keybind><keybind key="W-f"><action name="ToggleFullscreen">
-        </action></keybind><keybind key="W-m"><action name="ToggleMaximizeFull">
-        </action></keybind><!--<keybind key="W-o">
+  <keyboard>
+    <chainQuitKey>C-g
+    </chainQuitKey>
+    <!-- Keybindings for desktop switching -->
+    <keybind key="C-A-Left">
+      <action name="DesktopLeft">
+        <dialog>no
+        </dialog>
+        <wrap>no
+        </wrap>
+      </action>
+    </keybind>
+    <keybind key="C-A-Right">
+      <action name="DesktopRight">
+        <dialog>no
+        </dialog>
+        <wrap>no
+        </wrap>
+      </action>
+    </keybind>
+    <keybind key="C-A-Up">
+      <action name="DesktopUp">
+        <dialog>no
+        </dialog>
+        <wrap>no
+        </wrap>
+      </action>
+    </keybind>
+    <keybind key="C-A-Down">
+      <action name="DesktopDown">
+        <dialog>no
+        </dialog>
+        <wrap>no
+        </wrap>
+      </action>
+    </keybind>
+    <keybind key="S-A-Left">
+      <action name="SendToDesktopLeft">
+        <dialog>no
+        </dialog>
+        <wrap>no
+        </wrap>
+      </action>
+    </keybind>
+    <keybind key="S-A-Right">
+      <action name="SendToDesktopRight">
+        <dialog>no
+        </dialog>
+        <wrap>no
+        </wrap>
+      </action>
+    </keybind>
+    <keybind key="S-A-Up">
+      <action name="SendToDesktopUp">
+        <dialog>no
+        </dialog>
+        <wrap>no
+        </wrap>
+      </action>
+    </keybind>
+    <keybind key="S-A-Down">
+      <action name="SendToDesktopDown">
+        <dialog>no
+        </dialog>
+        <wrap>no
+        </wrap>
+      </action>
+    </keybind>
+    <!-- Desktops Movements -->
+    <keybind key="W-1">
+      <action name="Desktop">
+        <desktop>1
+        </desktop>
+      </action>
+    </keybind>
+    <keybind key="W-A-1">
+      <action name="SendToDesktop">
+        <desktop>1
+        </desktop>
+        <follow>yes
+        </follow>
+      </action>
+    </keybind>
+    <keybind key="W-2">
+      <action name="Desktop">
+        <desktop>2
+        </desktop>
+      </action>
+    </keybind>
+    <keybind key="W-A-2">
+      <action name="SendToDesktop">
+        <desktop>2
+        </desktop>
+        <follow>yes
+        </follow>
+      </action>
+    </keybind>
+    <keybind key="W-3">
+      <action name="Desktop">
+        <desktop>3
+        </desktop>
+      </action>
+    </keybind>
+    <keybind key="W-A-3">
+      <action name="SendToDesktop">
+        <desktop>3
+        </desktop>
+        <follow>yes
+        </follow>
+      </action>
+    </keybind>
+    <keybind key="W-4">
+      <action name="Desktop">
+        <desktop>4
+        </desktop>
+      </action>
+    </keybind>
+    <keybind key="W-A-4">
+      <action name="SendToDesktop">
+        <desktop>4
+        </desktop>
+        <follow>yes
+        </follow>
+      </action>
+    </keybind>
+    <keybind key="W-5">
+      <action name="Desktop">
+        <desktop>5
+        </desktop>
+      </action>
+    </keybind>
+    <keybind key="W-A-5">
+      <action name="SendToDesktop">
+        <desktop>5
+        </desktop>
+        <follow>yes
+        </follow>
+      </action>
+    </keybind>
+    <keybind key="W-6">
+      <action name="Desktop">
+        <desktop>6
+        </desktop>
+      </action>
+    </keybind>
+    <keybind key="W-A-6">
+      <action name="SendToDesktop">
+        <desktop>6
+        </desktop>
+        <follow>yes
+        </follow>
+      </action>
+    </keybind>
+    <keybind key="W-d">
+      <action name="ToggleShowDesktop"/>
+    </keybind>
+    <!-- Windows Actions -->
+    <keybind key="W-c">
+      <action name="Close">
+      </action>
+    </keybind>
+    <keybind key="W-A-space">
+      <action name="ToggleAlwaysOnTop">
+      </action>
+    </keybind>
+    <keybind key="W-f">
+      <action name="ToggleFullscreen">
+      </action>
+    </keybind>
+    <keybind key="W-m">
+      <action name="ToggleMaximizeFull">
+      </action>
+    </keybind>
+    <keybind key="W-0">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Xscreensaver Lock</name>
+        </startupnotify>
+        <command>xscreensaver-command -lock</command>
+      </action>
+</keybind>
+    <!--<keybind key="W-o">
       <action name="ToggleMaximizeHorz">
         </action>
     </keybind>
     <keybind key="W-e">
       <action name="ToggleMaximizeVert">
         </action>
-    </keybind>--><keybind key="W-i"><action name="Iconify">
-        </action></keybind><keybind key="W-n"><action name="NextWindow"><dialog>no</dialog><raise>yes</raise><linear>yes</linear></action></keybind><keybind key="W-p"><action name="PreviousWindow"><dialog>no</dialog><raise>yes</raise><linear>yes</linear></action></keybind><!-- Windows Movements -->
-    <keybind key="W-Up"><action name="DirectionalTargetNorth">
-        <!-- </action></keybind><keybind key="W-k"><action name="DirectionalTargetNorth"> -->
-        </action></keybind><keybind key="W-Down"><action name="DirectionalTargetSouth">
-        <!-- </action></keybind><keybind key="W-j"><action name="DirectionalTargetSouth"> -->
-        </action></keybind><keybind key="W-Left"><action name="DirectionalTargetWest">
-        <!-- </action></keybind><keybind key="W-h"><action name="DirectionalTargetWest"> -->
-        </action></keybind><keybind key="W-Right"><action name="DirectionalTargetEast">
-        <!-- </action></keybind><keybind key="W-l"><action name="DirectionalTargetEast"> -->
-        </action></keybind><keybind key="W-S-Up"><action name="MovetoEdgeNorth">
-        </action></keybind><keybind key="W-S-k"><action name="MoveToEdgeNorth">
-        </action></keybind><keybind key="W-S-Down"><action name="MovetoEdgeSouth">
-        </action></keybind><keybind key="W-S-j"><action name="MoveToEdgeSouth">
-        </action></keybind><keybind key="W-S-Left"><action name="MovetoEdgeWest">
-        </action></keybind><keybind key="W-S-h"><action name="MoveToEdgeWest">
-        </action></keybind><keybind key="W-S-Right"><action name="MoveToEdgeEast">
-        </action></keybind><keybind key="W-S-l"><action name="MoveToEdgeEast">
-        </action></keybind><keybind key="W-C-Up"><action name="GrowToEdgeNorth">
-        </action></keybind><keybind key="W-C-k"><action name="GrowToEdgeNorth">
-        </action></keybind><keybind key="W-C-Down"><action name="GrowToEdgeSouth">
-        </action></keybind><keybind key="W-C-j"><action name="GrowToEdgeSouth">
-        </action></keybind><keybind key="W-C-Left"><action name="GrowToEdgeWest">
-        </action></keybind><keybind key="W-C-h"><action name="GrowToEdgeWest">
-        </action></keybind><keybind key="W-C-Right"><action name="GrowToEdgeEast">
-        </action></keybind><keybind key="W-C-l"><action name="GrowToEdgeEast">
-        </action></keybind><!-- Keybindings for windows --><keybind key="A-F4"><action name="Close"/></keybind><keybind key="A-Escape"><action name="Lower"/><action name="FocusToBottom"/><action name="Unfocus"/></keybind><keybind key="W-space"><action name="ShowMenu"><menu>client-menu</menu></action></keybind><!-- Keybindings for window switching --><keybind key="A-Tab"><action name="NextWindow"/></keybind><keybind key="A-S-Tab"><action name="PreviousWindow"/></keybind><keybind key="C-A-Tab"><action name="NextWindow"><panels>yes</panels><desktop>yes</desktop></action></keybind><!-- Keybindings for running applications --><keybind key="W-e"><action name="Execute"><startupnotify><enabled>true</enabled><name>PCManFM</name></startupnotify><command>pcmanfm</command></action></keybind><!--keybindings for LXPanel --><keybind key="W-r"><action name="Execute"><command>lxpanelctl run</command></action></keybind><keybind key="A-F2"><action name="Execute"><command>lxpanelctl run</command></action></keybind><keybind key="C-Escape"><action name="Execute"><command>lxpanelctl menu</command></action></keybind><keybind key="F11"><action name="ToggleFullscreen"/></keybind><!-- Launch Task Manager with Ctrl+Alt+Del --><keybind key="A-C-Delete"><action name="Execute"><command>lxtask</command></action></keybind><!-- Fast access to Terminal --><keybind key="W-t"><action name="Execute"><command>lxterminal</command></action></keybind><!-- Fast access to filemanager --><keybind key="C-A-D"><action name="Execute"><startupnotify><enabled>true</enabled><name>PCManFM</name></startupnotify><command>pcmanfm</command></action></keybind><!-- Keybinding for PrintScreen Key --><keybind key="Print"><action name="Execute"><execute>scrot</execute></action></keybind><keybind key="A-Print"><action name="Execute"><execute>scrot -s</execute></action></keybind>
-<keybind key="W-h">
-    <action name="DirectionalFocusWest">
-     <raise>yes</raise>
-     <dialog>yes</dialog>
-     <finalactions>
-      <action name="Focus"/>
-      <action name="Raise"/>
-      <action name="Unshade"/>
-     </finalactions>
-    </action>
-  </keybind>
-  <keybind key="W-l">
-    <action name="DirectionalFocusEast">
-     <raise>yes</raise>
-     <dialog>yes</dialog>
-     <finalactions>
-      <action name="Focus"/>
-      <action name="Raise"/>
-      <action name="Unshade"/>
-     </finalactions>
-    </action>
-  </keybind>
-  <keybind key="W-k">
-    <action name="DirectionalFocusNorth">
-     <raise>yes</raise>
-     <dialog>yes</dialog>
-     <finalactions>
-      <action name="Focus"/>
-      <action name="Raise"/>
-      <action name="Unshade"/>
-     </finalactions>
-    </action>
-  </keybind>
-  <keybind key="W-j">
-    <action name="DirectionalFocusSouth">
-     <raise>yes</raise>
-     <dialog>yes</dialog>
-     <finalactions>
-      <action name="Focus"/>
-      <action name="Raise"/>
-      <action name="Unshade"/>
-     </finalactions>
-    </action>
-  </keybind>
+    </keybind>-->
+    <keybind key="W-i">
+      <action name="Iconify">
+      </action>
+    </keybind>
+    <keybind key="W-n">
+      <action name="NextWindow">
+        <dialog>no
+        </dialog>
+        <raise>yes
+        </raise>
+        <linear>yes
+        </linear>
+      </action>
+    </keybind>
+    <keybind key="W-p">
+      <action name="PreviousWindow">
+        <dialog>no
+        </dialog>
+        <raise>yes
+        </raise>
+        <linear>yes
+        </linear>
+      </action>
+    </keybind>
+    <!-- Windows Movements -->
+    <keybind key="W-Up">
+      <action name="DirectionalTargetNorth">
+        <!--
+           </action>
+    </keybind>
+    <keybind key="W-k">
+      <action name="DirectionalTargetNorth"> -->
+      </action>
+    </keybind>
+    <keybind key="W-Down">
+      <action name="DirectionalTargetSouth">
+        <!--
+           </action>
+    </keybind>
+    <keybind key="W-j">
+      <action name="DirectionalTargetSouth"> -->
+      </action>
+    </keybind>
+    <keybind key="W-Left">
+      <action name="DirectionalTargetWest">
+        <!--
+           </action>
+    </keybind>
+    <keybind key="W-h">
+      <action name="DirectionalTargetWest"> -->
+      </action>
+    </keybind>
+    <keybind key="W-Right">
+      <action name="DirectionalTargetEast">
+        <!--
+           </action>
+    </keybind>
+    <keybind key="W-l">
+      <action name="DirectionalTargetEast"> -->
+      </action>
+    </keybind>
+    <keybind key="W-S-Up">
+      <action name="MovetoEdgeNorth">
+      </action>
+    </keybind>
+    <keybind key="W-S-k">
+      <action name="MoveToEdgeNorth">
+      </action>
+    </keybind>
+    <keybind key="W-S-Down">
+      <action name="MovetoEdgeSouth">
+      </action>
+    </keybind>
+    <keybind key="W-S-j">
+      <action name="MoveToEdgeSouth">
+      </action>
+    </keybind>
+    <keybind key="W-S-Left">
+      <action name="MovetoEdgeWest">
+      </action>
+    </keybind>
+    <keybind key="W-S-h">
+      <action name="MoveToEdgeWest">
+      </action>
+    </keybind>
+    <keybind key="W-S-Right">
+      <action name="MoveToEdgeEast">
+      </action>
+    </keybind>
+    <keybind key="W-S-l">
+      <action name="MoveToEdgeEast">
+      </action>
+    </keybind>
+    <keybind key="W-C-Up">
+      <action name="GrowToEdgeNorth">
+      </action>
+    </keybind>
+    <keybind key="W-C-k">
+      <action name="GrowToEdgeNorth">
+      </action>
+    </keybind>
+    <keybind key="W-C-Down">
+      <action name="GrowToEdgeSouth">
+      </action>
+    </keybind>
+    <keybind key="W-C-j">
+      <action name="GrowToEdgeSouth">
+      </action>
+    </keybind>
+    <keybind key="W-C-Left">
+      <action name="GrowToEdgeWest">
+      </action>
+    </keybind>
 
-<!-- Window pseudotiling -->
-<!-- left-->
-<keybind key="W-A-a">
-  <action name="UnmaximizeFull"/>
-  <action name="MoveResizeTo">
-    <x>0</x><y>0</y><width>1024</width><height>1152</height></action></keybind>
-<!-- right-->
-<keybind key="W-A-d">
-  <action name="UnmaximizeFull"/>
-  <action name="MoveResizeTo">
-    <x>-0</x><y>0</y><width>1024</width><height>1152</height></action></keybind>
-<!-- top-->
-<keybind key="W-A-w">
-  <action name="UnmaximizeFull"/>
-  <action name="MoveResizeTo">
-    <x>-0</x><y>0</y><width>1024</width><height>576</height></action></keybind>
-<!-- bottom-->
-<keybind key="W-A-x">
-  <action name="UnmaximizeFull"/>
-  <action name="MoveResizeTo">
-    <x>-0</x><y>-0</y><width>1024</width><height>576</height></action></keybind>
-<!-- top left-->
-<keybind key="W-A-q">
-  <action name="UnmaximizeFull"/>
-  <action name="MoveResizeTo">
-    <x>0</x><y>0</y><width>1024</width><height>576</height></action></keybind>
-<!-- top right-->
-<keybind key="W-A-e">
-  <action name="UnmaximizeFull"/>
-  <action name="MoveResizeTo">
-    <x>-0</x><y>0</y><width>1024</width><height>576</height></action></keybind>
-<!-- bottom left-->
-<keybind key="W-A-z">
-  <action name="UnmaximizeFull"/>
-  <action name="MoveResizeTo">
-    <x>0</x><y>-0</y><width>1024</width><height>576</height></action></keybind>
-<!-- bottom right-->
-<keybind key="W-A-c">
-  <action name="UnmaximizeFull"/>
-  <action name="MoveResizeTo">
-    <x>-0</x><y>-0</y><width>1024</width><height>576</height></action></keybind>
-<!-- left left-->
-<keybind key="W-C-a">
-  <action name="UnmaximizeFull"/>
-  <action name="MoveResizeTo">
-    <x>0</x><y>0</y><width>1024</width><height>1152</height></action></keybind>
-<!-- right right-->
-<keybind key="W-C-d">
-  <action name="UnmaximizeFull"/>
-  <action name="MoveResizeTo">
-    <x>-0</x><y>0</y><width>1024</width><height>1152</height></action></keybind>
-<!-- center-->
-<keybind key="W-A-s">
-  <action name="UnmaximizeFull"/>
-  <action name="MoveResizeTo">
-    <x>512</x><y>0</y><width>1023</width><height>1152</height></action></keybind>
-<!--
+    <keybind key="W-C-h">
+      <action name="GrowToEdgeWest">
+      </action>
+    </keybind>
+
+    <keybind key="W-C-Right">
+      <action name="GrowToEdgeEast">
+      </action>
+    </keybind>
+    <keybind key="W-C-l">
+      <action name="GrowToEdgeEast">
+      </action>
+    </keybind>
+    <!-- Keybindings for windows -->
+    <keybind key="A-F4">
+
+      <action name="Close"/>
+    </keybind>
+    <keybind key="A-Escape">
+      <action name="Lower"/>
+      <action name="FocusToBottom"/>
+      <action name="Unfocus"/>
+    </keybind>
+    <keybind key="W-space">
+      <action name="ShowMenu">
+        <menu>client-menu
+        </menu>
+      </action>
+    </keybind>
+    <!-- Keybindings for window switching -->
+    <keybind key="A-Tab">
+      <action name="NextWindow"/>
+    </keybind>
+    <keybind key="A-S-Tab">
+      <action name="PreviousWindow"/>
+    </keybind>
+    <keybind key="C-A-Tab">
+      <action name="NextWindow">
+        <panels>yes
+        </panels>
+        <desktop>yes
+        </desktop>
+      </action>
+    </keybind>
+    <!-- Keybindings for running applications -->
+    <keybind key="W-e">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true
+          </enabled>
+          <name>PCManFM
+          </name>
+        </startupnotify>
+        <command>pcmanfm
+        </command>
+      </action>
+    </keybind>
+    <!--keybindings for LXPanel -->
+    <keybind key="W-r">
+      <action name="Execute">
+        <command>lxpanelctl run
+        </command>
+      </action>
+    </keybind>
+    <keybind key="A-F2">
+      <action name="Execute">
+        <command>lxpanelctl run
+        </command>
+      </action>
+    </keybind>
+    <keybind key="C-Escape">
+      <action name="Execute">
+        <command>lxpanelctl menu
+        </command>
+      </action>
+    </keybind>
+    <keybind key="F11">
+      <action name="ToggleFullscreen"/>
+    </keybind>
+    <!-- Launch Task Manager with Ctrl+Alt+Del -->
+    <keybind key="A-C-Delete">
+      <action name="Execute">
+        <command>lxtask
+        </command>
+      </action>
+    </keybind>
+    <!-- Fast access to Terminal -->
+    <keybind key="W-t">
+      <action name="Execute">
+        <command>terminator
+        </command>
+      </action>
+    </keybind>
+    <!-- Fast access to filemanager -->
+    <keybind key="C-A-D">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true
+          </enabled>
+          <name>PCManFM
+          </name>
+        </startupnotify>
+        <command>pcmanfm
+        </command>
+      </action>
+    </keybind>
+    <!-- Keybinding for PrintScreen Key -->
+    <keybind key="Print">
+      <action name="Execute">
+        <execute>scrot
+        </execute>
+      </action>
+    </keybind>
+    <keybind key="A-Print">
+      <action name="Execute">
+        <execute>scrot -s
+        </execute>
+      </action>
+    </keybind>
+    <keybind key="W-h">
+      <action name="DirectionalFocusWest">
+        <raise>yes
+        </raise>
+        <dialog>yes
+        </dialog>
+        <finalactions>
+          <action name="Focus"/>
+          <action name="Raise"/>
+          <action name="Unshade"/>
+        </finalactions>
+      </action>
+    </keybind>
+    <keybind key="W-l">
+      <action name="DirectionalFocusEast">
+        <raise>yes
+        </raise>
+        <dialog>yes
+        </dialog>
+        <finalactions>
+          <action name="Focus"/>
+          <action name="Raise"/>
+          <action name="Unshade"/>
+        </finalactions>
+      </action>
+    </keybind>
+    <keybind key="W-k">
+      <action name="DirectionalFocusNorth">
+        <raise>yes
+        </raise>
+        <dialog>yes
+        </dialog>
+        <finalactions>
+          <action name="Focus"/>
+          <action name="Raise"/>
+          <action name="Unshade"/>
+        </finalactions>
+      </action>
+    </keybind>
+    <keybind key="W-j">
+      <action name="DirectionalFocusSouth">
+        <raise>yes
+        </raise>
+        <dialog>yes
+        </dialog>
+        <finalactions>
+          <action name="Focus"/>
+          <action name="Raise"/>
+          <action name="Unshade"/>
+        </finalactions>
+      </action>
+    </keybind>
+    <!-- Window pseudotiling -->
+    <!-- left-->
+    <keybind key="W-A-a">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>0
+        </x>
+        <y>0
+        </y>
+        <width>1024
+        </width>
+        <height>1152
+        </height>
+      </action>
+    </keybind>
+    <!-- right-->
+    <keybind key="W-A-d">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>-0
+        </x>
+        <y>0
+        </y>
+        <width>1024
+        </width>
+        <height>1152
+        </height>
+      </action>
+    </keybind>
+    <!-- top-->
+    <keybind key="W-A-w">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>-0
+        </x>
+        <y>0
+        </y>
+        <width>1024
+        </width>
+        <height>576
+        </height>
+      </action>
+    </keybind>
+    <!-- bottom-->
+    <keybind key="W-A-x">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>-0
+        </x>
+        <y>-0
+        </y>
+        <width>1024
+        </width>
+        <height>576
+        </height>
+      </action>
+    </keybind>
+    <!-- top left-->
+    <keybind key="W-A-q">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>0
+        </x>
+        <y>0
+        </y>
+        <width>1024
+        </width>
+        <height>576
+        </height>
+      </action>
+    </keybind>
+    <!-- top right-->
+    <keybind key="W-A-e">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>-0
+        </x>
+        <y>0
+        </y>
+        <width>1024
+        </width>
+        <height>576
+        </height>
+      </action>
+    </keybind>
+    <!-- bottom left-->
+    <keybind key="W-A-z">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>0
+        </x>
+        <y>-0
+        </y>
+        <width>1024
+        </width>
+        <height>576
+        </height>
+      </action>
+    </keybind>
+    <!-- bottom right-->
+    <keybind key="W-A-c">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>-0
+        </x>
+        <y>-0
+        </y>
+        <width>1024
+        </width>
+        <height>576
+        </height>
+      </action>
+    </keybind>
+    <!-- left left-->
+    <keybind key="W-C-a">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>0
+        </x>
+        <y>0
+        </y>
+        <width>1024
+        </width>
+        <height>1152
+        </height>
+      </action>
+    </keybind>
+    <!-- right right-->
+    <keybind key="W-C-d">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>-0
+        </x>
+        <y>0
+        </y>
+        <width>1024
+        </width>
+        <height>1152
+        </height>
+      </action>
+    </keybind>
+    <!-- center-->
+    <keybind key="W-A-s">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>512</x>
+        <y>0</y>
+        <width>1023</width>
+        <height>1152</height>
+      </action>
+    </keybind>
+    <!--
 <keybind key="W-q">
       <action name="MoveResizeTo">
         <x>0</x>
@@ -809,9 +1296,9 @@
     </application>
     <application name="emacs*">
       <desktop>3</desktop>
-<!--      <maximized>yes</maximized> -->
+      <!--      <maximized>yes</maximized> -->
     </application>
-  <!--
+    <!--
   # this is an example with comments through out. use these to make your
   # own rules, but without the comments of course.
 

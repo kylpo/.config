@@ -1,0 +1,8 @@
+@nm-applet
+@lxpanel --profile Lubuntu
+@xscreensaver -no-splash
+@gnome-power-manager
+@pcmanfm --desktop --profile lubuntu
+@/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+xmodmap .xmodmaprc
+~/.dropbox-dist/dropboxd

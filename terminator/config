@@ -1,21 +1,25 @@
 [global_config]
+  handle_size = 1
+  enabled_plugins = CustomCommandsMenu, ActivityWatch, TerminalShot, LaunchpadCodeURLHandler, APTURLHandler, MavenPluginURLHandler, LaunchpadBugURLHandler
   focus = mouse
-  borderless = True
+  title_transmit_fg_color = "#dc322f"
+  geometry_hinting = False
+  title_transmit_bg_color = "#000000"
 [keybindings]
+  go_up = <Alt>k
+  split_horiz = <Alt>2
+  go_down = <Alt>j
+  close_term = <Alt>0
+  split_vert = <Alt>3
+  go_right = <Alt>l
+  go_left = <Alt>h
 [profiles]
-  #[[solarized]]
-    #palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
-    #copy_on_selection = True
-    #background_color = "#042028"
-    #use_system_font = False
-    #foreground_color = "#708183"
   [[default]]
     palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
     copy_on_selection = True
     background_color = "#042028"
-    use_system_font = False
+    scrollbar_position = hidden
     foreground_color = "#708183"
-
 [layouts]
   [[default]]
     [[[child1]]]
