@@ -3,10 +3,10 @@
 
 Global {
     edge=bottom
-    allign=left
+    allign=right
     margin=0
-    widthtype=percent
-    width=100
+    widthtype=pixel
+    width=1440
     height=16
     transparent=0
     tintcolor=#000000
@@ -52,12 +52,6 @@ Plugin {
 Plugin {
     type = launchbar
     Config {
-        Button {
-            id=/usr/share/applications/lubuntu-logout.desktop
-        }
-        Button {
-            id=/usr/share/applications/gnome-user-share-properties.desktop
-        }
         Button {
             id=/usr/share/applications/lxtask.desktop
         }
