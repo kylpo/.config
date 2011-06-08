@@ -3,7 +3,7 @@
 
 Global {
     edge=bottom
-    allign=right
+    allign=left
     margin=0
     widthtype=pixel
     width=1440
@@ -25,7 +25,8 @@ Global {
 Plugin {
     type = menu
     Config {
-        image=/home/kp/.icons/ice/scalable/actions/go-top.svg
+#        image=/home/kp/.icons/ice/scalable/actions/go-top.svg
+        image=/usr/share/icons/lubuntu/places/22/gnome-main-menu.svg
         system {
         }
         separator {
