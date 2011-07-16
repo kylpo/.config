@@ -5,25 +5,29 @@
   title_transmit_fg_color = "#dc322f"
   geometry_hinting = False
   title_transmit_bg_color = "#000000"
+  tab_position = hidden
 [keybindings]
-  go_up = <Alt>k
+  go_up = None
   next_tab = <Super>n
-  split_horiz = <Alt>2
-  go_prev = <Alt>p
+  split_horiz = None
+  go_prev = None
   prev_tab = <Super>p
-  go_down = <Alt>j
-  close_term = <Alt>0
-  split_vert = <Alt>3
-  go_right = <Alt>l
-  go_next = <Alt>n
-  go_left = <Alt>h
+  go_down = None
+  close_term = None
+  split_vert = None
+  go_right = None
+  go_next = None
+  go_left = None
 [profiles]
   [[default]]
     scrollbar_position = hidden
     palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
     font = Monaco 9
+    scrollback_lines = 1000
     use_system_font = False
     foreground_color = "#708183"
+    icon_bell = False
+    show_titlebar = False
     copy_on_selection = True
     background_color = "#042028"
 [layouts]
