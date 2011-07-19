@@ -22,7 +22,7 @@
   [[default]]
     scrollbar_position = hidden
     palette = "#5f5f5f:#ac7373:#7f9f7f:#d0bf8f:#4c7073:#ec93d3:#93e0e3:#ffffff:#282828:#cc9393:#bfebbf:#f0dfaf:#94bff3:#dc8cc3:#8cd0d3:#dcdccc"
-    font = Monaco 9
+    font = Monaco 8
     scrollback_lines = 1000
     use_system_font = False
     foreground_color = "#dcdccc"
