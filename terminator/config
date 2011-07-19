@@ -21,7 +21,7 @@
 [profiles]
   [[default]]
     scrollbar_position = hidden
-    palette = "#5f5f5f:#8c5353:#bfebbf:#d0bf8f:#4c7073:#ec93d3:#93e0e3:#ffffff:#282828:#cc9393:#7f9f7f:#f0dfaf:#94bff3:#dc8cc3:#8cd0d3:#dcdccc"
+    palette = "#5f5f5f:#ac7373:#bfebbf:#d0bf8f:#4c7073:#ec93d3:#93e0e3:#ffffff:#282828:#cc9393:#7f9f7f:#f0dfaf:#94bff3:#dc8cc3:#8cd0d3:#dcdccc"
     font = Monaco 9
     scrollback_lines = 1000
     use_system_font = False
