@@ -21,6 +21,17 @@
 [profiles]
   [[default]]
     scrollbar_position = hidden
+    palette = "#5f5f5f:#8c5353:#bfebbf:#d0bf8f:#4c7073:#ec93d3:#93e0e3:#ffffff:#282828:#cc9393:#7f9f7f:#f0dfaf:#94bff3:#dc8cc3:#8cd0d3:#dcdccc"
+    font = Monaco 9
+    scrollback_lines = 1000
+    use_system_font = False
+    foreground_color = "#dcdccc"
+    icon_bell = False
+    show_titlebar = False
+    copy_on_selection = True
+    background_color = "#3f3f3f"
+  [[solarized]]
+    scrollbar_position = hidden
     palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
     font = Monaco 9
     scrollback_lines = 1000
@@ -29,7 +40,7 @@
     icon_bell = False
     show_titlebar = False
     copy_on_selection = True
-    background_color = "#042028"
+    background_color = "#073642"
 [layouts]
   [[default]]
     [[[child1]]]
