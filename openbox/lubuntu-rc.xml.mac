@@ -811,6 +811,7 @@
       <desktop>2</desktop>
       <!-- <maximized>yes</maximized> -->
     </application>
+    <!-- obxprop | grep "^_OB_APP" to discover role, name, class, etc -->
     <application name="chromium*" role="collectiveintellect.campfirenow.com__room_368637">
       <desktop>1</desktop>
       <position force="no">
