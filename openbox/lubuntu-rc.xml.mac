@@ -849,6 +849,9 @@
         <y>0</y>
       </position>
     </application>
+    <application name="terminator" role="finch">
+      <desktop>6</desktop>
+    </application>
     <!--
   # this is an example with comments through out. use these to make your
   # own rules, but without the comments of course.
