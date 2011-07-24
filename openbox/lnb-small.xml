@@ -1296,7 +1296,7 @@
     <application name="terminator" role="finch">
       <desktop>6</desktop>
     </application>
-    <application name="pidgin">
+    <application name="Pidgin">
       <desktop>6</desktop>
     </application>
     <!--
